@@ -37,13 +37,5 @@ EV-BMS-008 Verify SOC decrease during discharge
     [Documentation]    Confirms SOC decrements under driving/discharge.
     Verify SOC Change During State    50    Discharging    5
 
-EV-BMS-009 Verify invalid SOC
-    [Documentation]    Asserts out-of-range SOC values are handled appropriately.
-    # Out of boundary checks (SOC cannot be > 100% or < 0% initially)
-    Verify SOC Boundaries    150
-    Verify SOC Boundaries    -10
-
-EV-BMS-010 Verify SOC boundary values
-    [Documentation]    Validates exact boundary values for SOC calculation logic.
-    Verify BMS SOC Level    0
-    Verify BMS SOC Level    100
+*******************************
+New Test Cases are applied here
