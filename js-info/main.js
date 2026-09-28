@@ -8,7 +8,7 @@ const myValues = [1, 2, 3, 4, 5];
 const students = ["Alice", "Bob", "Charlie", "David", "Eve"];
 
 for (const value of students) {
-  document.write(`<p>${value}</p>`);
+  // document.write(`<p>${value}</p>`);
 }
 
 const myObj = {
@@ -17,14 +17,14 @@ const myObj = {
   city: "New York"
 };
 
-document.write("---- For-in loop iteration method ----")
+// document.write("---- For-in loop iteration method ----")
 for (const key in myObj) {
 
-  document.write(`<p>${key}: ${myObj[key]}</p>`)
+  // document.write(`<p>${key}: ${myObj[key]}</p>`)
 }
 
 // Rest operator
-document.write("---- Rest operator ----")
+// document.write("---- Rest operator ----")
 const restFunction = (...nums) => {
   console.log('Nums: ', nums);
   let sum = 0;
@@ -32,7 +32,7 @@ const restFunction = (...nums) => {
     console.log(data, nums[data])
     sum += nums[data];
   }
-  document.write(`<p>Sum is: ${sum}</p>`);
+  // document.write(`<p>Sum is: ${sum}</p>`);
 }
 
 restFunction(10, 20, 30, 40, 50);
@@ -127,12 +127,32 @@ if (palindrome_text.toLowerCase() === palindrome_reversed.toLowerCase()) {
 
 // Change background color of body of the document whenever event happened in the page
 
-function changeBackgroundColor() {
-  let body = document.body;
-  let colorStr = "0123456789ABCDEF";
-  let randomStr = "#";
-  for (let i = 0; i < 6; i++) {
-    randomStr += colorStr[Math.floor(Math.random() * 16)];
-  }
-  body.style.backgroundColor = randomStr;
-}
+// function changeBackgroundColor() {
+//   let body = document.body;
+//   let colorStr = "0123456789ABCDEF";
+//   let randomStr = "#";
+//   for (let i = 0; i < 6; i++) {
+//     randomStr += colorStr[Math.floor(Math.random() * 16)];
+//   }
+//   body.style.backgroundColor = randomStr;
+// }
+
+// Variables
+
+let _name$ = "John";
+let admin = _name$;
+// alert(admin);
+
+let names = "Ilya";
+// alert(`Hello, ${1}`);
+// alert(`Hello, ${names}`);
+// alert(`Hello, ${"names"}`);
+
+/* 
+    Type conversions
+    String, Number, Boolean, +, !! and some other operators are needed to perform the 
+    mathematical calculations
+*/
+
+let counter = 1;
+console.log(2 * counter++);
