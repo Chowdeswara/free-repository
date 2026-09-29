@@ -1,6 +1,6 @@
 // Template literals
 let tempStrings = "Template Literals";
-console.log(`I like the ${tempStrings}`);
+// console.log(`I like the ${tempStrings}`);
 
 // For-of & For-in iterators
 
@@ -26,7 +26,7 @@ for (const key in myObj) {
 // Rest operator
 // document.write("---- Rest operator ----")
 const restFunction = (...nums) => {
-  console.log('Nums: ', nums);
+  // console.log('Nums: ', nums);
   let sum = 0;
   for (let data in nums) {
     console.log(data, nums[data])
@@ -43,7 +43,7 @@ const fruits = ["apple", "banana", "cherry"];
 const veggies = ["carrot", "broccoli", "spinach"];
 
 const allFoods = [...fruits, ...veggies];
-console.log('All foods: ', allFoods);
+// console.log('All foods: ', allFoods);
 
 const useCars = {
   name: "Toyota",
@@ -54,13 +54,13 @@ const newCar = {
   ...useCars,
   year: 2020
 };
-console.log('New car: ', newCar);
+// console.log('New car: ', newCar);
 
 // Destructuring
 
 const datas = [0, 1, 2, 3, 4];
 const [zero, one, two] = datas;
-console.log('Zero: ', zero);
+// console.log('Zero: ', zero);
 
 const objDestru = {
   firstName: "John",
@@ -69,15 +69,15 @@ const objDestru = {
 };
 
 const { firstName, lastName, age = 32 } = objDestru;
-console.log('First Name: ', firstName);
-console.log('Last Name: ', lastName);
-console.log('Age: ', age);
+// console.log('First Name: ', firstName);
+// console.log('Last Name: ', lastName);
+// console.log('Age: ', age);
 
 
 const Register = (urlData) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log('Please register');
+      // console.log('Please register');
       if (urlData) {
         resolve("Successfully registered");
       } else {
@@ -88,16 +88,16 @@ const Register = (urlData) => {
 }
 url = '';
 Register(url).then((response) => {
-  console.log(response);
+  // console.log(response);
 }).catch((error) => {
-  console.error(error);
+  // console.error(error);
 });
 
 // String reverse
 
 let str_original = "Apple";
 let str_reversed = str_original.split("").reverse().join("")
-console.log(str_reversed)
+// console.log(str_reversed)
 
 // using with loops
 
@@ -106,12 +106,12 @@ let str_text = "";
 for (let i = 0; i < str_original.length; i++) {
   str_text = str_original[i] + str_text;
 }
-console.log(str_text);
+// console.log(str_text);
 
 // Largest number in the sequence
 
 let array_originals = [5, 140, 3, 8, 2];
-console.log(Math.max(...array_originals));
+//  // console.log(Math.max(...array_originals));
 
 // Check palindrom
 
@@ -120,9 +120,9 @@ let palindrome_text = "Racecare";
 let palindrome_reversed = palindrome_text.split("").reverse().join('');
 
 if (palindrome_text.toLowerCase() === palindrome_reversed.toLowerCase()) {
-  console.log("It's a palindrome!");
+  // console.log("It's a palindrome!");
 } else {
-  console.log("It's not a palindrome.");
+  // console.log("It's not a palindrome.");
 }
 
 // Change background color of body of the document whenever event happened in the page
@@ -155,4 +155,26 @@ let names = "Ilya";
 */
 
 let counter = 1;
-console.log(2 * counter++);
+// console.log(2 * counter++);
+
+let a = 1, b = 1;
+let c = ++a;
+let d = b++;
+// console.log('a:', a);
+// console.log('b:', b);
+// console.log('c:', c);
+// console.log('d:', d);
+
+// let user = prompt('What is the “official” name of JavaScript?');
+
+// if (user === "ECMAScript") {
+//   alert('Right!');
+// } else {
+//   alert('You don’t know? ECMAScript!');
+// }
+
+let first_Name = null;
+let last_Name = null;
+let nichName = 'Supercoder';
+
+// alert(first_Name  ?? nichName ?? last_Name ?? 'Anonymous');
